@@ -131,6 +131,7 @@
     <ClCompile Include="displayconfig.c" />
     <ClCompile Include="gameconfig.c" />
     <ClCompile Include="playerconfig.c" />
+    <ClCompile Include="treasurehunt.c" />
     <ClCompile Include="w7.c" />
   </ItemGroup>
   <ItemGroup>

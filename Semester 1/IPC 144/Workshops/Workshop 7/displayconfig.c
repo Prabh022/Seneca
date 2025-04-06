@@ -1,9 +1,10 @@
 #define _CRT_SECURE_NO_WARNINGS
-#include<treasurehunt.h>
+#include <stdio.h>
+#include "treasurehunt.h"
 
 // Function to display the final configuration summary
 void displayConfiguration(const PlayerInfo* player, const GameInfo* game) {
-    printf("\n------------------------------------\n");
+    printf("\n------------------------------------\n"); 
     printf(" TREASURE HUNT Configuration Settings\n");
     printf("------------------------------------\n");
     printf("Player:\n");

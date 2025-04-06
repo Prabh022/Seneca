@@ -1,4 +1,4 @@
-
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <treasurehunt.h>
 
@@ -12,11 +12,16 @@ int main(void) {
     printf("        Treasure Hunt!          \n");
     printf("================================\n\n");
 
-    configurePlayer(&player);
-    configureGame(&game, player.lives);
-    displayConfiguration(&player, &game);
 
+        configurePlayer(&player);
+        configureGame(&game, player.lives);
+        displayConfiguration(&player, &game);
+        playGame(&player, &game);
+
+      
+    printf("======================================\n");
     printf("\n~ Get ready to play TREASURE HUNT! ~\n");
+    printf("======================================\n");
     return 0;
 }
 

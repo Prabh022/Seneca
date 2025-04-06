@@ -12,13 +12,19 @@ int main(void) {
     printf("        Treasure Hunt!          \n");
     printf("================================\n\n");
 
-    configurePlayer(&player);
-    configureGame(&game, player.Lives);
-    displayConfiguration(&player, &game);
 
+        configurePlayer(&player);
+        configureGame(&game, player.lives);
+        displayConfiguration(&player, &game);
+      
+      
+    printf("======================================\n");
     printf("\n~ Get ready to play TREASURE HUNT! ~\n");
+    printf("======================================\n");
+
+    playGame(&player, &game);
     return 0;
 }
 
 
-
+8

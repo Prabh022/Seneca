@@ -1,8 +1,6 @@
 #ifndef TREASURE_HUNT
 #define TREASURE_HUNT
 
-#define _CRT_SECURE_NO_WARNINGS
-
 #define MAX_LIVES 10        // Maximum lives a player can have
 #define MIN_LIVES 1         // Minimum lives a player can have
 #define MIN_PATH 10         // Minimum path length
@@ -15,6 +13,7 @@ typedef struct {
     char symbol;                // Character symbol representing the player
     int lives;                  // Number of lives for the player
     int treasuresFound;          // Count of treasures found
+    int moves;                   // number of moves made by player
     int history[MAX_PATH];       // Array storing past moves (1=visited, 0=not visited)
 } PlayerInfo;
 
@@ -30,5 +29,6 @@ typedef struct {
 void configurePlayer(PlayerInfo* player);
 void configureGame(GameInfo* game, int playerLives);
 void displayConfiguration(const PlayerInfo* player, const GameInfo* game);
+void playGame(PlayerInfo* player, GameInfo* game);
 
 #endif // !TREASURE_HUNT

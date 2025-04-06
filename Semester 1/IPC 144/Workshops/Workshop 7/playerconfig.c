@@ -1,5 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
-#include<treasurehunt.h>
+#include <stdio.h>
+#include "treasurehunt.h"
 
 // Function to configure player settings
 void configurePlayer(PlayerInfo* player) {
@@ -12,7 +13,7 @@ void configurePlayer(PlayerInfo* player) {
 
     // Get number of lives (validating input)
     do {
-        printf("Set the number of lives: ");
+        printf("Set the number of lives: "); 
         scanf("%d", &player->lives);
         if (player->lives < MIN_LIVES || player->lives > MAX_LIVES) {
             printf("  Must be between %d and %d!\n", MIN_LIVES, MAX_LIVES);

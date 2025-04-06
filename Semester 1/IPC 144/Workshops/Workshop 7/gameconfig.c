@@ -1,4 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
 #include<treasurehunt.h>
 
 // Function to configure game settings
@@ -6,7 +7,7 @@ void configureGame(GameInfo* game, int playerLives) {
     printf("GAME Configuration\n");
     printf("------------------\n");
 
-    // Get path length (must be a multiple of PATH_STEP and within valid range)
+    //8 Get path length (must be a multiple of PATH_STEP and within valid range)
     do {
         printf("Set the path length (a multiple of %d between %d-%d): ", PATH_STEP, MIN_PATH, MAX_PATH);
         scanf("%d", &game->pathLength);
@@ -18,7 +19,7 @@ void configureGame(GameInfo* game, int playerLives) {
     // Calculate the maximum allowed moves (75% of path length)
     int maxMovesLimit = (int)(game->pathLength * MAX_MOVES_PERCENT);
 
-    // Ensure max moves is at least equal to the player's lives
+    // Ensure max moves is at least equal to the player's lives 
     if (maxMovesLimit < playerLives) {
         maxMovesLimit = playerLives;
     }
