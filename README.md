@@ -24,11 +24,23 @@ Built a command-line game using modular C files with user interaction, player st
 ### 🌐 Web Portal
 Created a responsive web portal using HTML, CSS, JS and integrated with a back-end using Node.js and MongoDB.
 
-### 📦 Inventory Management System (Java)
-Developed a desktop app using Java with object-oriented concepts and file handling.
+### 📦 Inventory Management System (Java and C++)
+Developed a desktop app using Java and C++ as well with object-oriented concepts and file handling.
 
-### 🧠 AI Service Integration (Team Project at IBM)
-Worked on integrating AI APIs into a corporate internal portal during my role as a software developer.
+### 🧠 AI Service Integration (Team Project)
+Worked on integrating AI APIs into a corporate internal portal during team project.
+
+### 💻 Database Design, Normalization, and Disaster Recovery Setup**
+Designed scalable relational databases, applied normalization techniques, and implemented disaster recovery strategies to ensure data integrity and availability.
+
+### 🌐 Web Development and Front-End Optimization
+Developed responsive web applications with focus on front-end optimization, ensuring smooth user experience and fast load times.
+
+### 📊 Data Analytics and Reporting Automation
+Created automated reporting systems to gather, analyze, and visualize business data, driving data-driven decision-making for the company.
+
+### 🔧 Database Administration and Performance Tuning
+Managed large-scale databases, focused on performance tuning, query optimization, and ensuring system uptime and reliability.
 
 ---
 
