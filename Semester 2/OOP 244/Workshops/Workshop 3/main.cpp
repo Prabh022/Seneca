@@ -17,7 +17,6 @@
 #include <iostream>
 #include <cstdio>
 #include "CC.h"
-
 using namespace std;
 using namespace seneca;
 void listCCs();
