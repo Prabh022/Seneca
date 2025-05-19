@@ -1,0 +1,131 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0; padding: 0;
+  background: #f9f9f9;
+  color: #222;
+}
+
+nav {
+  background: #004aad;
+  padding: 1rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.gallery {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-card {
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  width: 280px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.project-card img {
+  width: 100%;
+  display: block;
+}
+
+.project-content {
+  padding: 1rem;
+}
+
+.project-content h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.project-content p {
+  margin: 0 0 1rem 0;
+}
+
+.project-content a {
+  color: #004aad;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project-content a:hover {
+  text-decoration: underline;
+}
+
+form {
+  max-width: 500px;
+  margin-top: 3rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #004aad;
+  outline: none;
+}
+
+.error-msg {
+  color: red;
+  font-size: 0.8rem;
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+}
+
+button {
+  background: #004aad;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #00357a;
+}
