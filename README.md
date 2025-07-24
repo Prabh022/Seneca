@@ -8,7 +8,7 @@ This 2-year program gave me a strong foundation in software development, databas
 ## 💡 What I Learned
 
 - **Programming Languages**: C, C++, Java, Python, JavaScript
-- **Web Development**: HTML, CSS, JS, React, Node.js
+- **Web Development**: HTML, CSS, JS, React, Node.js,Rest API, Angular
 - **Database**: MySQL, Oracle, MongoDB, MS SQL Server
 - **Operating Systems**: Windows, Linux, UNIX
 - **Software Development Practices**: Agile, Git, Object-Oriented Programming
