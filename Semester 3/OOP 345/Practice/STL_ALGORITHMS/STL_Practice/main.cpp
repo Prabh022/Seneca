@@ -1,5 +1,5 @@
 ﻿#include<iostream>
-#include<queue>
+#include<deque>
 
 int main() {
 
