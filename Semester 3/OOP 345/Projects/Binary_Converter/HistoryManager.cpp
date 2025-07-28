@@ -8,6 +8,6 @@ void HistoryManager::addRecord(const std::string& entry) {
 }
 
 void HistoryManager::showHistory() {
-    std::cout << "\n🔍 Conversion History:\n";
+    std::cout << "\n Conversion History:\n";
     for (const auto& h : history) std::cout << "• " << h << "\n";
 }

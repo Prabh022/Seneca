@@ -1,6 +1,6 @@
 ﻿#include <iostream>
 #include <string>
-#include "BinaryConverter.h"8
+#include "BinaryConverter.h"
 #include "BinaryMath.h"
 #include "BitwisePlayground.h"
 #include "HistoryManager.h"
@@ -54,7 +54,7 @@ int main() {
                 std::cout << "Binary 2 (subtrahend): ";
                 std::cin >> input2;
                 std::string result = BinaryMath::subtract(input1, input2);
-                std::cout << "→ Difference: " << result << "\n";
+                std::cout << " Difference: " << result << "\n";
                 HistoryManager::addRecord(input1 + " - " + input2 + " = " + result);
             }
             else if (choice == 5) {
@@ -63,7 +63,7 @@ int main() {
                 std::cout << "Binary 2: ";
                 std::cin >> input2;
                 std::string result = BitwisePlayground::bitwiseAND(input1, input2);
-                std::cout << "→ AND Result: " << result << "\n";
+                std::cout << " AND Result: " << result << "\n";
                 HistoryManager::addRecord(input1 + " & " + input2 + " = " + result);
             }
             else if (choice == 6) {
