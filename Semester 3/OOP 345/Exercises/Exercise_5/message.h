@@ -13,7 +13,7 @@ namespace seneca
 		/// The email address of the person who receives the message.
 		/// </summary>
 		std::string m_toAddress;
-
+		8
 		/// <summary>
 		/// The email address of the person who sent the message.
 		/// </summary>
