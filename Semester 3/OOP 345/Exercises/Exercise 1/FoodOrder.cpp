@@ -43,8 +43,8 @@ namespace seneca
 		{
 			double priceTaxed = m_price + (m_price * g_taxrate);
 			cout << setw(10) << m_customerName << "|"
-				 << setw(25) << m_orderDesc << "|"
-				 << fixed << setw(12) << setprecision(2) << priceTaxed << "|";
+				<< setw(25) << m_orderDesc << "|"
+				<< fixed << setw(12) << setprecision(2) << priceTaxed << "|";
 			if (m_dailyspecial)
 				cout << right << setprecision(2) << setw(13) << priceTaxed - g_dailydiscount;
 		}
@@ -55,7 +55,7 @@ namespace seneca
 
 	FoodOrder::~FoodOrder()
 	{
-		delete [] m_orderDesc;
+		delete[] m_orderDesc;
 	}
 
 	FoodOrder::FoodOrder(const FoodOrder& src)
@@ -67,7 +67,7 @@ namespace seneca
 	{
 		if (this != &src)
 		{
-			delete [] m_orderDesc;
+			delete[] m_orderDesc;
 			m_orderDesc = nullptr;
 
 			// Shallow copy
@@ -78,7 +78,7 @@ namespace seneca
 			// Deep Copy
 			if (src.m_orderDesc)
 			{
-				m_orderDesc = new char [strlen(src.m_orderDesc) + 1];
+				m_orderDesc = new char[strlen(src.m_orderDesc) + 1];
 				strcpy(m_orderDesc, src.m_orderDesc);
 			}
 		}

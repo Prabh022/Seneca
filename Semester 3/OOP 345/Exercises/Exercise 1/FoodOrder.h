@@ -15,10 +15,10 @@ namespace seneca
 		double m_price{};
 		bool m_dailyspecial{};
 	public:
-		void read(std::istream &is);
+		void read(std::istream& is);
 		void display() const;
 
-		FoodOrder(){};
+		FoodOrder() {};
 		FoodOrder(const FoodOrder& src);
 		FoodOrder& operator=(const FoodOrder& src);
 		~FoodOrder();
