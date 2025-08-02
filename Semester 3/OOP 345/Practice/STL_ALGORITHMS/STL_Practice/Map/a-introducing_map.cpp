@@ -9,7 +9,7 @@ int main() {
     std::string name;
     int age;
 
-    std::cou2t << "How many people? ";
+    std::cout << "How many people? ";
     std::cin >> count;
 
     for (int i = 0; i < count; ++i) {
