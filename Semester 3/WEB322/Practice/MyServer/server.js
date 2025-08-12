@@ -2,6 +2,15 @@ const express = require('express');
 const app = express();
 const HTTP_PORT = process.env.PORT || 8080;
 const path = require('path');
+require('pg');
+const Sequelize = require('sequelize');
+
+// Tell Express where views folder is
+app.set('views', __dirname + '/views');
+
+// Serve static files from the 'public' folder
+app.use(express.static(__dirname + '/public'));
+
 
 app.get('/', (req,res) => {
     //res.send('Hello, World!');
