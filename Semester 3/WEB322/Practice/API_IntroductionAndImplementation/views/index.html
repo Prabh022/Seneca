@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+      <title>API Test</title>
+      <script>
+          function makeAJAXRequest(method, url, body) {
+              fetch(url, {
+                  method: method,
+                  body: JSON.stringify(body), // if missing 'body', 'undefined' is returned
+                  headers: { 'Content-Type': 'application/json' }
+              })
+              .then(response => response.json())
+              .then(json => {
+                  console.log(json);
+              });
+          }
+      </script>
+  </head>
+  <body>
+      <p>Test the API by outputting to the browser console:</p>
+      <!-- Get All Users -->
+      <button type="button" onclick='makeAJAXRequest("GET", "/api/users")'>Get All Users</button><br /><br />
+      <!-- Add New User -->
+      <button type="button" onclick='makeAJAXRequest("POST", "/api/users", {fName: "Bob", lName: "Jones"})'>Add New User</button><br /><br />
+      <!-- Get User By Id -->
+      <button type="button" onclick='makeAJAXRequest("GET", "/api/users/2")'>Get User</button><br /><br />
+      <!-- Update User By Id -->
+      <button type="button" onclick='makeAJAXRequest("PUT", "/api/users/2", {fName: "Wanda", lName: "Smith"})'>Update User</button><br /><br />
+      <!-- Delete User By Id -->
+      <button type="button" onclick='makeAJAXRequest("DELETE", "/api/users/2")'>Delete User</button>
+  </body>
+</html>
