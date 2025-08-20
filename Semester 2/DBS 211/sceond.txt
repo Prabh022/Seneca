@@ -1,0 +1,47 @@
+#include <iostream>
+#include <occi.h>
+
+using oracle::occi::Environment;
+using oracle::occi::Connection;
+using namespace oracle::occi;
+using namespace std;
+
+int main(void) {
+	// OCCI Variables
+	Environment* env = nullptr;
+	Connection* conn = nullptr;
+	// User Variables
+	string str;
+	string usr = "dbs211_221zb23";    // this is your login assigned to you
+	string pass = "14827315";   // this is your password assigned to you
+	string srv = "myoracle12c.senecacollege.ca:1521/oracle12c";
+	try {
+		env = Environment::createEnvironment(Environment::DEFAULT);
+		conn = env->createConnection(usr, pass, srv);
+		cout << "Connection is Successful!" << endl;
+		printf("Group Number is 4\n");
+		printf("Members name are:\n                 Prabhjeet Singh\n                 Uttamjit Singh\n                 Bachittar Singh\n");
+
+		Statement* stmt = conn->createStatement();
+
+		ResultSet* rs = stmt->executeQuery("SELECT officecode,city,state,country,postalcode FROM offices ORDER BY officecode");
+
+		cout << "The company offices are:" << endl;
+		cout << "# City       State       Country         PostalCode" << endl;
+
+		while (rs->next()) {
+			int count = rs->getInt(1);   // get the first column as int
+			string city = rs->getString(2);  // get the second column as a string
+			string state = rs->getString(3);  //etc
+			string country = rs->getString(4);
+			string pc = rs->getString(5);
+			cout << count << " " << city << " " << state << " " << country << " " << pc << endl;
+		}
+		env->terminateConnection(conn);
+		Environment::terminateEnvironment(env);
+	}
+	catch (SQLException& sqlExcp) {
+		cout << sqlExcp.getErrorCode() << ": " << sqlExcp.getMessage();
+	}
+	return 0;
+}
