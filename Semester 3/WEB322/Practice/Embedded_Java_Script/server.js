@@ -5,6 +5,9 @@ const expressLayouts = require('express-ejs-layouts');
 const app = express();
 const HTTP_PORT = process.env.PORT || 8080;
 
+// ✅ Instead of app.listen(), export the app
+module.exports = app;
+
 // View engine & layouts
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
@@ -36,3 +39,4 @@ app.get('/viewData', (req, res) => {
 app.listen(HTTP_PORT, () => {
   console.log(`Server running on port ${HTTP_PORT}`);
 });
+
