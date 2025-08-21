@@ -4,7 +4,8 @@ const express = require("express");
 const path = require("path");
 
 const app = express();
-
+// Export as serverless function for Vercel
+module.exports = app;         
 // ejs setup
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
@@ -20,6 +21,17 @@ app.get("/", (req, res) => {
 app.get("/about", (req, res) => {
   res.render("about", { title: "About Page" });
 });
+app.get('/viewData', (req, res) => {
+  const data = {
+    name: "John Doe",
+    age: 30,
+    occupation: "Developer",
+    company: "Tech Corp"
+  };
+
+  res.render('viewdata', { data });
+});
+
 
 // listen (local only)
 const PORT = process.env.PORT || 3000;
