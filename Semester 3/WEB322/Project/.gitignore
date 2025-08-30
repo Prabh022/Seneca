@@ -1,0 +1,29 @@
+# 🚫 Ignore node dependencies
+node_modules/
+
+# 🗂️ Optional build outputs
+dist/
+build/
+*.log
+
+# 🌐 Environment + config
+.env
+.env.local
+.env.*.local
+
+# ⚙️ System files
+.DS_Store
+Thumbs.db
+
+# 🔧 IDE/editor files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# 🧪 Coverage reports
+coverage/
+
+# 📦 Package locks (optional: uncomment if needed)
+# yarn.lock
+# package-lock.json
