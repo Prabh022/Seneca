@@ -55,6 +55,7 @@ void test_getInts(){
 }
 
 void test_Contact(){
+   // cin.ignore(10000, '\n'); - (Working on a different approach)
    Contact* cptr;
    cout << "Enter the following:\nJohn\nDoe\n4412345123456\n" << endl;
    cptr = getContact();

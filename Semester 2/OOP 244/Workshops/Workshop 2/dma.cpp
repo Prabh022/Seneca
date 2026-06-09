@@ -36,6 +36,7 @@ namespace seneca {
         Contact* newContact = new Contact;
 
         std::cout << "Name: ";
+        std::cin.ignore(1000, '\n');   
         std::cin.getline(newContact->m_name, 21);
 
         std::cout << "Last name: ";
@@ -43,14 +44,17 @@ namespace seneca {
 
         std::cout << "Phone number: ";
         std::cin >> newContact->m_phoneNumber;
+        std::cin.ignore(1000, '\n');   
 
         return newContact;
     }
+
     void display(const Contact& c) {
         std::cout << c.m_name << " " << c.m_lastname << ", +" << c.m_phoneNumber << std::endl;
     }
     void deallocate(Contact* c) {
         delete c;
+       
     }
     
     void setEmpty(Contact& c) {

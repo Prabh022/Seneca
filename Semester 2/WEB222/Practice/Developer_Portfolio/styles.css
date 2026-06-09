@@ -1,0 +1,107 @@
+/* ===== Color Theme ===== */
+:root {
+  --primary: #4f46e5;
+  --primary-dark: #3730a3;
+  --accent: #f59e0b;
+  --bg-light: #f3f4f6;
+  --text-dark: #1f2937;
+  --text-light: #ffffff;
+}
+
+/* ===== Base Styles ===== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, var(--bg-light), #e5e7eb);
+  color: var(--text-dark);
+  scroll-behavior: smooth;
+}
+
+/* ===== Header ===== */
+header {
+  background: var(--primary);
+  color: var(--text-light);
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header a {
+  color: var(--text-light);
+  margin: 0 10px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+header a:hover {
+  color: var(--accent);
+}
+
+/* ===== Sections ===== */
+section {
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+  background: #ffffff;
+  padding: 60px 20px;
+  margin: 40px auto;
+  border-radius: 12px;
+  max-width: 900px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+#hero { animation-delay: 0.2s; }
+#about { animation-delay: 0.4s; }
+#projects { animation-delay: 0.6s; }
+#contact { animation-delay: 0.8s; }
+
+/* ===== Fade-in Animation ===== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Buttons ===== */
+button {
+  background: var(--primary);
+  color: var(--text-light);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px) scale(1.05);
+}
+
+/* ===== Links ===== */
+a {
+  color: var(--primary);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+
+/* ===== Footer ===== */
+footer {
+  background: var(--primary-dark);
+  color: var(--text-light);
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px 20px 0 0;
+}
