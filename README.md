@@ -1,74 +1,93 @@
-# 👨‍💻 Computer Programming (Seneca College)
+# 🎓 Seneca Computer Programming
 
-Hi! I'm a graduate of the **Computer Programming** diploma program at **Seneca College**.  
-This 2-year program gave me a strong foundation in software development, database management, web technologies, and programming best practices.
+This repository contains coursework, projects, exercises, and programming experiments from my **Computer Programming studies at Seneca Polytechnic**.
 
----
-
-## 💡 What I Learned
-
-- **Programming Languages**: C, C++, Java, Python, JavaScript
-- **Web Development**: HTML, CSS, JS, React, Node.js,Rest API, Angular
-- **Database**: MySQL, Oracle, MongoDB, MS SQL Server
-- **Operating Systems**: Windows, Linux, UNIX
-- **Software Development Practices**: Agile, Git, Object-Oriented Programming
-- **Tools & Platforms**: GitHub, Visual Studio Code, Eclipse, Jira
+It documents my progression through programming, databases, web development, software engineering, and related technical subjects.
 
 ---
 
-## 🛠️ Projects
+## 📚 Repository Structure
 
-### 🕹️ Treasure Hunt Game (C Language)
-Built a command-line game using modular C files with user interaction, player stats, and board logic.
+### Semester 1
+Programming fundamentals and introductory software development concepts.
 
-### 🌐 Web Portal
-Created a responsive web portal using HTML, CSS, JS and integrated with a back-end using Node.js and MongoDB.
+### Semester 2
+Intermediate programming, object-oriented concepts, databases, and application development.
 
-### 📦 Inventory Management System (Java and C++)
-Developed a desktop app using Java and C++ as well with object-oriented concepts and file handling.
+### Semester 3
+More advanced programming and web/software development coursework.
 
-### 🧠 AI Service Integration (Team Project)
-Worked on integrating AI APIs into a corporate internal portal during team project.
+### Semester 4
+Advanced coursework including web services and application development.
 
-### 💻 Database Design, Normalization, and Disaster Recovery Setup**
-Designed scalable relational databases, applied normalization techniques, and implemented disaster recovery strategies to ensure data integrity and availability.
+### Web Service Project
+A larger project focused on working with web-service technologies.
 
-### 🌐 Web Development and Front-End Optimization
-Developed responsive web applications with focus on front-end optimization, ensuring smooth user experience and fast load times.
-
-### 📊 Data Analytics and Reporting Automation
-Created automated reporting systems to gather, analyze, and visualize business data, driving data-driven decision-making for the company.
-
-### 🔧 Database Administration and Performance Tuning
-Managed large-scale databases, focused on performance tuning, query optimization, and ensuring system uptime and reliability.
+### `my-vercel-app`
+Web development experimentation and deployment-related work.
 
 ---
 
-## 🎯 Skills
+## 🛠️ Technologies Covered
 
-- **Problem Solving & Debugging**
-- **Version Control (Git + GitHub)**
-- **Database Design and Queries**
-- **RESTful API Integration**
-- **Client & Server-Side Scripting**
+Depending on the course and project:
+
+- C
+- C++
+- Java
+- Python
+- JavaScript
+- HTML / CSS
+- React
+- Node.js
+- REST APIs
+- SQL
+- Oracle
+- MySQL
+- MongoDB
+- Git / GitHub
+- Linux / UNIX
 
 ---
 
-## 📜 Certification
+## 🧠 Concepts
 
-- Diploma in **Computer Programming** – Seneca College  
+- Procedural Programming
+- Object-Oriented Programming
+- Data Structures
+- Algorithms
+- Database Design
+- SQL
+- Web Development
+- REST APIs
+- Client/Server Architecture
+- Debugging
+- Version Control
+- Software Development Practices
 
 ---
 
-## 🚀 Future Goals
+## 🎯 Purpose
 
-I’m a Computer Programming graduate from Seneca, currently exploring full-time opportunities in software development, web development, and database administration. I'm passionate about building efficient, scalable solutions and always open to learning new technologies in today’s fast-moving tech world.
+This repository is primarily a **learning archive and record of my development as a programmer**.
+
+Some coursework is academic in nature, while selected projects may later be developed into standalone portfolio projects.
 
 ---
 
-## 📫 Let’s Connect
+## 🚀 What's Next
 
-- **Email**: singhprabh23064@gmail.com
-- **LinkedIn**: -- will update shortly
-- **GitHub**: will update shortly
+As I continue my Computer Science degree, I plan to expand my skills and create separate portfolio projects involving:
 
+- ⚙️ C++ Object-Oriented Programming
+- 🗄️ Database Development
+- 🌐 Full-Stack Development
+- 🐍 Python Automation
+- 🤖 AI Applications
+- 🔐 Cybersecurity
+- 🌐 Networking
+- ☁️ Cloud / DevOps
+
+---
+
+> **A record of where I started, what I learned, and how I'm progressing.**
